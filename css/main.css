@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+:root {
+  --primary-color: #0D0D2B;
+  --link-color: #3671E9;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  transition: 0.3s;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.container img {
+  width: 100%;
+}
+
+header {
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  margin: 0;
+  display: flex;
+  gap: 1.6rem;
+}
+header .logo img {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: normal;
+  border-radius: 50%;
+}
+header .logo p {
+  font-family: "Inter";
+  margin: 0;
+  display: inline-block;
+  align-self: center;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+header nav {
+  margin: 0;
+  display: flex;
+  gap: 5.6rem;
+}
+header nav ul {
+  align-self: center;
+  margin: 0;
+  display: flex;
+  padding: 0%;
+}
+header nav ul li {
+  margin: 0;
+}
+header nav .pry-nav {
+  gap: 3.2rem;
+}
+header nav .pry-nav li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+header nav .sec-nav {
+  gap: 2.4rem;
+}
+header nav .sec-nav .demark {
+  width: 1px;
+  height: 20px;
+  background-color: #F2F2F2;
+  z-index: 10;
+}
+header nav .sec-nav li {
+  align-self: center;
+}
+header nav .sec-nav li a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+header nav .sec-nav .register {
+  background: #3671E9;
+  border-radius: 32px;
+  padding: 14px 32px;
+}
+
+main .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 10rem;
+}
+main .container .left-col {
+  align-self: center;
+}
+main .container .left-col .promo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.8rem 1.1rem;
+  border-radius: 3.2rem;
+}
+main .container .left-col .promo span {
+  background-color: #FFFFFF;
+  color: var(--primary-color);
+  padding: 0.4em;
+  margin-right: 1.2rem;
+  border-radius: 3.2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+}
+main .container .left-col h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76px;
+}
+main .container .left-col p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+  letter-spacing: 0.01em;
+  color: #E0E0E0;
+  width: 70%;
+}
+main .container .left-col button {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  background: var(--link-color);
+  border-radius: 32px;
+  padding: 1.6rem;
+  border: none;
+}
+main .container .left-col button * {
+  margin: 0;
+}
+main .container .left-col button p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .container .left-col button span img {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  padding: 1.1rem 1.3rem;
+}
+main .container img {
+  display: block;
+  justify-self: flex-end;
+}
+
+.why-crappo .container {
+  display: grid;
+  padding: 10rem 0;
+}
+.why-crappo .container * {
+  margin: 0;
+}
+.why-crappo .container .top-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.why-crappo .container .top-row .stats {
+  display: grid;
+  grid-template-columns: 0.1fr 1.5fr;
+  gap: 0 2.4rem;
+}
+.why-crappo .container .top-row .stats .image-ctnr {
+  align-self: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  width: 8rem;
+  height: 8rem;
+}
+.why-crappo .container .top-row .stats .image-ctnr img {
+  width: 4rem;
+  height: 4rem;
+  box-sizing: unset;
+}
+.why-crappo .container .top-row .stats h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+}
+.why-crappo .container .top-row .stats p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #E0E0E0;
+}
+.why-crappo .container .bottom-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.why-crappo .container .bottom-row .right-col {
+  align-self: center;
+  padding-left: 3rem;
+}
+.why-crappo .container .bottom-row .right-col h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  padding-bottom: 2.4rem;
+}
+.why-crappo .container .bottom-row .right-col p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  padding-bottom: 3.2rem;
+  letter-spacing: 0.01em;
+  color: #E0E0E0;
+  padding-right: 16rem;
+}
+.why-crappo .container .bottom-row .right-col button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  background: var(--link-color);
+  padding: 1.6rem 2.4rem;
+  border: none;
+  border-radius: 32px;
+}
+
+.check .container {
+  text-align: center;
+  padding: 10rem 0 22rem;
+}
+.check .container h4 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+}
+.check .container p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #E0E0E0;
+  padding: 0 25%;
+}
+
+.calculate {
+  position: relative;
+  margin: 0;
+  width: auto;
+}
+.calculate .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  background: #FFFFFF;
+  filter: drop-shadow(0px 20px 200px rgba(57, 23, 119, 0.2));
+  display: grid;
+  padding: 4.8rem;
+  border-radius: 1.6rem;
+  width: 65.4%;
+}
+.calculate .container * {
+  margin: 0;
+}
+.calculate .top-side {
+  background: #FBFCFE;
+}
+.calculate .top-side form {
+  width: 100%;
+  padding-bottom: 4.8rem;
+  display: grid;
+  grid-template-columns: 0.53fr 0.267fr 0.2fr;
+  gap: 0 4.8rem;
+}
+.calculate .top-side form input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.calculate .top-side form input[type=tel],
+.calculate .top-side form select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #E0E0E0;
+  color: #0D0D2B;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  outline: none;
+  background-color: unset;
+}
+.calculate .top-side form input {
+  color: var(--primary-color);
+}
+.calculate .top-side form input[type=submit] {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  background: var(--link-color);
+  padding: 1.6rem 2.4rem;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 32px;
+  color: #FFFFFF;
+}
+.calculate .down-side h5 {
+  color: var(--link-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0 0 1.6rem;
+}
+.calculate .down-side h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  padding: 0 0 0.4rem;
+}
+.calculate .down-side p {
+  color: #828282;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+.calculate .down-side .blue {
+  color: var(--link-color);
+}
+
+.cryptocurrencies {
+  background-color: #FFFFFF;
+  padding: 27rem 0 10rem;
+}
+.cryptocurrencies .container {
+  display: flex;
+  flex-direction: column;
+}
+.cryptocurrencies sup {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #BDBDBD;
+}
+.cryptocurrencies h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: var(--primary-color);
+  padding: 0 20%;
+  margin: auto;
+  margin-bottom: 6.5rem;
+}
+.cryptocurrencies .crypto-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.5rem;
+}
+.cryptocurrencies .card {
+  display: grid;
+  padding: 4.8rem 2.4rem;
+  border-radius: 1.6rem;
+  justify-content: center;
+}
+.cryptocurrencies .card img {
+  aspect-ratio: 1/1;
+  width: 80px;
+  justify-self: center;
+}
+.cryptocurrencies .card h5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--primary-color);
+}
+.cryptocurrencies .card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #828282;
+}
+.cryptocurrencies .card button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(43, 7, 110, 0.2);
+  justify-self: center;
+}
+.cryptocurrencies .card button img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  aspect-ratio: 3/5;
+  width: 1.2rem;
+  padding: 2.2rem 2.5rem;
+  box-sizing: unset;
+  background-color: #FFFFFF;
+}
+.cryptocurrencies .bitcoin {
+  background: #2B076E;
+  -webkit-backdrop-filter: blur(250px);
+          backdrop-filter: blur(250px);
+}
+.cryptocurrencies .bitcoin h5 {
+  color: #FFFFFF;
+}
+.cryptocurrencies .bitcoin p {
+  color: #FFFFFF;
+}
+.cryptocurrencies .bitcoin button {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  background: var(--link-color);
+  border-radius: 32px;
+  padding: 1.85rem 2.4rem;
+  border: none;
+}
+.cryptocurrencies .bitcoin button * {
+  margin: 0;
+}
+.cryptocurrencies .bitcoin button p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.cryptocurrencies .bitcoin button span img {
+  background-color: #FFFFFF;
+  aspect-ratio: 3/5;
+  width: 6px;
+  border-radius: 50%;
+  padding: 1.1rem 1.3rem;
+}
+
+.subscribe {
+  padding: 8.8rem 0;
+  background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+}
+
+.subscribe .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--link-color);
+  padding: 2.4rem 4.8rem;
+  border-radius: 16px;
+  background: url(../images/bg-mask-group.png);
+  background-size: 120rem 216px;
+  background-color: var(--link-color);
+}
+.subscribe .container .left-col h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+}
+.subscribe .container .left-col p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  width: 65%;
+}
+.subscribe .container form {
+  display: grid;
+  grid-template-columns: 1.7fr 0.3fr;
+  gap: 4rem;
+  align-content: center;
+  padding-bottom: 4rem;
+}
+.subscribe .container form input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  outline: none;
+}
+.subscribe .container form input[type=submit] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: var(--primary-color);
+  padding: 1.4rem 3.2rem;
+  border-radius: 32px;
+}
+
+footer {
+  padding: 8rem 0;
+}
+footer .extra-links {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .extra-links p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+footer .extra-links .socials {
+  display: flex;
+  gap: 4rem;
+}
+footer .extra-links .socials a {
+  align-self: center;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: 0.4fr 0.4fr 0.4fr 0.8fr;
+  padding-bottom: 11rem;
+  background-color: unset;
+}
+footer .container * {
+  margin: 0;
+}
+footer .container .logo {
+  display: flex;
+  gap: 1.6rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+footer .container .logo img {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: normal;
+  border-radius: 50%;
+}
+footer .container .logo p {
+  display: inline-block;
+  align-self: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+}
+footer .container .foot h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  padding-bottom: 2.4rem;
+}
+footer .container .foot li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 38px;
+  color: #F2F2F2;
+}
+footer .container .payments {
+  display: grid;
+  gap: 4rem;
+}
+footer .container .payments h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+  width: 80%;
+}
+footer .container .payments .mthds {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .container .payments .mthds a {
+  background: rgba(219, 214, 214, 0.05);
+  display: grid;
+  place-content: center;
+  border-radius: 8px;
+  width: 90px;
+  height: 64px;
+  border-radius: 8px;
+}
+footer .container .payments .mthds img {
+  z-index: 10;
+}
+footer .container .payments .mthds .btc-img {
+  display: block;
+  width: 19px;
+  height: 25px;
+  background: #E0E0E0;
+  padding: 7px 10px;
+  box-sizing: unset;
+  border-radius: 50%;
+}
