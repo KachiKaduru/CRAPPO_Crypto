@@ -43,7 +43,6 @@ header {
     .container {
         display: flex;
         justify-content: space-between;
-        //background-color: unset;
     }
 
     .logo {
@@ -166,7 +165,6 @@ main .container {
             font-weight: 400;
             font-size: 16px;
             line-height: 28px;
-            /* or 175% */
             letter-spacing: 0.01em;
             color: #E0E0E0;
             width: 70%;
@@ -203,10 +201,8 @@ main .container {
     }
 
     img {
-        // background-color: #3671E9;
         display: block;
         justify-self: flex-end;
-        // margin: 0;
     }
 }
 
@@ -240,7 +236,6 @@ main .container {
                 img {
                     width: 4rem;
                     height: 4rem;
-                    //padding: 2.25rem;
                     box-sizing: unset;
                 }
             }
@@ -348,15 +343,12 @@ main .container {
     }
 
     .top-side {
-
         background: #FBFCFE;
-        // background: orange;
 
         form {
             width: 100%;
             padding-bottom: 4.8rem;
             display: grid;
-            // grid-template-columns: 53.3% 26.7% 20%;
             grid-template-columns: .53fr .267fr .2fr;
             gap: 0 4.8rem;
 
@@ -375,7 +367,6 @@ main .container {
                 line-height: 150%;
                 outline: none;
                 background-color: unset;
-                // padding-top: 25rem;
             }
 
             input {
@@ -439,7 +430,6 @@ main .container {
     .container {
         display: flex;
         flex-direction: column;
-        // background-color: orangered;
     }
 
     sup {
@@ -464,16 +454,12 @@ main .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 4.5rem;
-        // background-color: aquamarine;
-
     }
 
     .card {
         display: grid;
-        // border: 2px solid darkmagenta;
         padding: 4.8rem 2.4rem;
         border-radius: 1.6rem;
-        // box-shadow: 0px 4px 5px #2B076E;
         justify-content: center;
 
         img {
@@ -636,7 +622,6 @@ main .container {
 
 footer {
     padding: 8rem 0;
-    // background-color: #BDBDBD;
 
     .extra-links {
         width: 90%;
@@ -729,7 +714,6 @@ footer {
 
                 a {
                     background: rgba(219, 214, 214, .05);
-                    // background-color: red;
                     display: grid;
                     place-content: center;
                     border-radius: 8px;

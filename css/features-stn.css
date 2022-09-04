@@ -4,6 +4,8 @@
 
 .features .container {
   display: grid;
+  gap: 10rem;
+  padding: 10rem 0;
 }
 .features .container sup {
   font-family: "Inter", sans-serif;
@@ -14,40 +16,43 @@
   color: #CFCFCF;
   opacity: 0.7;
 }
-.features .container h2 {
+
+h2 {
+  margin: 0;
   width: 65%;
-  margin: auto;
-  grid-column: 1/-1;
+  justify-self: center;
   text-align: center;
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
-  margin-top: 10rem;
 }
-.features .container .features-rows {
-  height: 60vh;
+
+.rows {
+  position: relative;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.features .container .text-col {
-  border: 3px solid darkorange;
+
+.text-col {
+  padding: 0 20rem 0 0;
+  text-align: left;
   align-self: center;
 }
-.features .container .text-col h5 {
+.text-col h5 {
   font-weight: 700;
   font-size: 32px;
   line-height: 150%;
   margin-bottom: 3rem;
 }
-.features .container .text-col p {
+.text-col p {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.01em;
   color: #E0E0E0;
 }
-.features .container .text-col button {
+.text-col button {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
@@ -57,40 +62,54 @@
   border: none;
   border-radius: 32px;
 }
-.features .container .other-col {
-  border: 1px solid palegreen;
+
+.detailed {
+  direction: rtl;
+  width: 110%;
+  margin-left: -5%;
 }
-.features .container .invest .other-col {
-  position: relative;
+.detailed .text-col {
+  padding-left: 5rem;
 }
-.features .container .invest .btc-card {
+
+.detailed .other-col {
+  align-self: center;
+}
+
+.invest .other-col {
+  width: 81%;
+}
+.invest .other-col .btc-card {
   padding: 4rem 4rem 4.8rem;
   background: #35068C;
   border-radius: 16px;
 }
-.features .container .invest .btc-card * {
+.invest .other-col .btc-card * {
   margin: 0;
 }
-.features .container .invest .btc-card .coin-logo {
+.invest .other-col .btc-card .flow {
+  width: 100%;
+}
+.invest .other-col .coin-logo {
   display: grid;
   grid-template-columns: 40px 180px auto;
   gap: 0 1.6rem;
 }
-.features .container .invest .btc-card .coin-logo img {
+.invest .other-col .coin-logo img {
   align-self: center;
   display: block;
   width: 40px;
   height: 40px;
 }
-.features .container .invest .btc-card .coin-logo .txt {
+.invest .other-col .coin-logo .txt {
   display: grid;
 }
-.features .container .invest .btc-card .coin-logo .txt h4 {
+.invest .other-col .coin-logo .txt h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
 }
-.features .container .invest .btc-card .coin-logo .txt p {
+.invest .other-col .coin-logo .txt p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -98,26 +117,23 @@
   letter-spacing: 0.01em;
   color: #F2F2F2;
 }
-.features .container .invest .btc-card .coin-logo span {
+.invest .other-col .coin-logo span {
   color: #42FFFF;
   font-size: 14px;
   line-height: 17px;
   text-align: right;
   letter-spacing: 0.01em;
 }
-.features .container .invest .btc-card .flow {
-  width: 100%;
-}
-.features .container .invest .offs {
+.invest .other-col .offs {
   font-family: "Inter", sans-serif;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: -5rem;
 }
-.features .container .invest .offs * {
+.invest .other-col .offs * {
   margin: 0;
 }
-.features .container .invest .offs cite {
+.invest .other-col .offs cite {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -126,8 +142,8 @@
   letter-spacing: 0.01em;
   color: #F2F2F2;
 }
-.features .container .invest .offs .increase,
-.features .container .invest .offs .dollar-price {
+.invest .other-col .increase,
+.invest .other-col .dollar-price {
   background: #491F98;
   -webkit-backdrop-filter: blur(250px);
           backdrop-filter: blur(250px);
@@ -139,99 +155,102 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  justify-self: center;
 }
-.features .container .invest .offs .increase h3,
-.features .container .invest .offs .dollar-price h3 {
+.invest .other-col .increase h3,
+.invest .other-col .dollar-price h3 {
   width: 14rem;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.01em;
 }
-.features .container .invest .offs .increase h4,
-.features .container .invest .offs .dollar-price h4 {
+.invest .other-col .increase h4,
+.invest .other-col .dollar-price h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.01em;
 }
-.features .container .invest .offs .increase {
-  justify-self: center;
+.invest .other-col .increase {
   padding: 2.4rem 1.6rem;
 }
-.features .container .invest .offs .dollar-price {
-  justify-self: center;
+.invest .other-col .dollar-price {
   text-align: center;
   padding: 1.6rem 3.2rem;
 }
-.features .container .detailed .other-col img {
-  width: 100%;
-}
-.features .container .grow .other-col {
+
+.grow .other-col {
   font-family: "Inter", sans-serif;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
   /* Note: backdrop-filter has minimal browser support */
+  border-radius: 16px;
   display: grid;
+  height: 100%;
 }
-.features .container .grow .other-col img {
+.grow .other-col img {
   width: 40px;
   height: 40px;
 }
-.features .container .grow .container {
+
+.grow .rate-card {
+  align-self: center;
   background: #35068C;
   display: grid;
-  width: 100%;
   border-radius: 16px;
-  box-sizing: border-box;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.features .container .grow .headings {
+.grow .rate-card .headings {
   display: grid;
-  grid-template-columns: 130px 1fr 1fr 1fr;
+  grid-template-columns: 15rem 1fr 1fr 1fr;
+  padding: 1.6rem;
 }
-.features .container .grow .headings p {
+.grow .rate-card .headings p {
+  margin: 0;
   text-align: center;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
 }
-.features .container .grow .rows {
+.grow .rate-card .rates {
   display: grid;
   grid-template-columns: 15rem 1fr 1fr 1fr;
   padding: 1.6rem;
-  box-sizing: border-box;
 }
-.features .container .grow .rows * {
+.grow .rate-card .rates * {
   margin: 0;
 }
-.features .container .grow .rows p {
-  place-self: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-}
-.features .container .grow .rows .change {
-  color: #8FFFBE;
-}
-.features .container .grow .rows .red {
-  color: #FF7676;
-}
-.features .container .grow .rows .coin {
+.grow .rate-card .rates .coin {
+  align-self: center;
   display: flex;
-  gap: 1.6rem;
+  gap: 0 1.6rem;
 }
-.features .container .grow .rows .coin .txt {
+.grow .rate-card .rates .coin .txt {
   display: grid;
-  gap: 4px;
+  gap: 0 4px;
 }
-.features .container .grow .rows .coin .txt h4 {
+.grow .rate-card .rates .coin .txt h4 {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
-.features .container .grow .rows .coin .txt p {
+.grow .rate-card .rates .coin .txt p {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.01em;
+}
+.grow .rate-card .rates p {
+  place-self: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+.grow .rate-card .rates .change {
+  color: #8FFFBE;
+}
+.grow .rate-card .rates .red {
+  color: #FF7676;
 }
