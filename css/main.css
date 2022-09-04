@@ -386,7 +386,6 @@ main .container img {
   font-size: 40px;
   text-align: center;
   color: var(--primary-color);
-  padding: 0 20%;
   margin: auto;
   margin-bottom: 6.5rem;
 }
