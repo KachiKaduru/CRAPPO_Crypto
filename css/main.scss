@@ -15,10 +15,11 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow: scroll;
 }
 
 * {
-    transition: .3s;
+    transition: .8s;
     // margin: 0;
     list-style-type: none;
     text-decoration: none;
@@ -34,6 +35,35 @@ body {
     img {
         width: 100%;
     }
+
+    .btn {
+        width: fit-content;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        background: var(--link-color);
+        border: none;
+        border-radius: 32px;
+        padding: 1.6rem 2.4rem;
+        color: #FFFFFF;
+
+        &:hover {
+            color: var(--link-color);
+            background-color: #FFFFFF;
+            font-weight: 500;
+
+            a {
+                color: var(--link-color);
+            }
+        }
+    }
+}
+
+
+.menu-btn,
+.exit-btn {
+    display: none;
 }
 
 header {
@@ -119,8 +149,6 @@ header {
             }
 
             .register {
-                background: #3671E9;
-                border-radius: 32px;
                 padding: 14px 32px;
             }
         }
@@ -219,6 +247,7 @@ main .container {
         grid-template-columns: repeat(3, 1fr);
 
         .stats {
+            justify-self: center;
             display: grid;
             grid-template-columns: .1fr 1.5fr;
             gap: 0 2.4rem;
@@ -283,16 +312,7 @@ main .container {
             }
 
             button {
-                width: fit-content;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 150%;
-                text-align: center;
-                background: var(--link-color);
                 padding: 1.6rem 2.4rem;
-                border: none;
-                border-radius: 32px;
-
             }
 
 
@@ -367,29 +387,22 @@ main .container {
                 line-height: 150%;
                 outline: none;
                 background-color: unset;
+
+                ::placeholder {
+                    color: #0D0D2B;
+                }
+
+                option {
+                    color: #0D0D2B;
+                    font-size: 16px;
+                }
             }
 
-            input {
-                color: var(--primary-color);
-            }
-
-            input[type=submit] {
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 150%;
-                text-align: center;
-                background: var(--link-color);
-                padding: 1.6rem 2.4rem;
-                box-sizing: border-box;
-                border: none;
-                border-radius: 32px;
-                color: #FFFFFF;
-            }
+            // input[type=submit] {}
         }
     }
 
     .down-side {
-
         h5 {
             color: var(--link-color);
             font-weight: 500;
@@ -460,10 +473,11 @@ main .container {
         padding: 4.8rem 2.4rem;
         border-radius: 1.6rem;
         justify-content: center;
+        box-shadow: 0px 2px 5px 0px var(--primary-color);
 
         img {
             aspect-ratio: 1/1;
-            width: 80px;
+            width: 8rem;
             justify-self: center;
         }
 
@@ -485,6 +499,7 @@ main .container {
         }
 
         button {
+            position: relative;
             width: fit-content;
             height: fit-content;
             padding: 0;
@@ -492,6 +507,14 @@ main .container {
             border-radius: 50%;
             border: 2px solid rgba(43, 7, 110, 0.2);
             justify-self: center;
+            border: none;
+            background-color: #FFFFFF;
+
+            span {
+                width: 0px;
+                z-index: -100;
+                opacity: 0;
+            }
 
             img {
                 display: block;
@@ -502,24 +525,47 @@ main .container {
                 padding: 2.2rem 2.5rem;
                 box-sizing: unset;
                 background-color: #FFFFFF;
+                border: 1px solid #3671E9;
             }
         }
+
+        &:hover {
+            background: #2B076E;
+            // backdrop-filter: blur(250px);
+            // transform: scale(1.02);
+            transition: .8s;
+            box-shadow: 0px 2px 5px 0px #510ccf;
+
+            img {
+                rotate: 360deg;
+                transition: all 1s;
+            }
+
+            h5 {
+                color: #FFFFFF;
+                // font-size: 36px;
+            }
+
+            p {
+                color: #FFFFFF;
+                // font-size: 18px;
+            }
+
+            button {
+                background: #2B076E;
+                transition: .8s;
+            }
+
+
+        }
     }
 
-    .bitcoin {
-        background: #2B076E;
-        backdrop-filter: blur(250px);
-
-        h5 {
-            color: #FFFFFF;
+    .card button:hover {
+        span {
+            width: fit-content;
+            z-index: 100;
         }
 
-        p {
-            color: #FFFFFF;
-        }
-    }
-
-    .bitcoin button {
         display: flex;
         gap: .8rem;
         align-items: center;
@@ -532,7 +578,10 @@ main .container {
             margin: 0;
         }
 
-        p {
+        span {
+            width: 100%;
+            transition: 1s;
+            opacity: 1;
             font-family: 'Rubik';
             font-style: normal;
             font-weight: 500;
@@ -543,14 +592,17 @@ main .container {
 
         }
 
-        span img {
+        img {
             background-color: #FFFFFF;
             aspect-ratio: 3/5;
             width: 6px;
             border-radius: 50%;
             padding: 1.1rem 1.3rem;
+            rotate: 720deg;
+            transition: 1.5s;
         }
     }
+
 }
 
 .subscribe {
@@ -716,12 +768,14 @@ footer {
                     display: grid;
                     place-content: center;
                     border-radius: 8px;
+                    aspect-ratio: 3/2.1333;
                     width: 90px;
-                    height: 64px;
+                    // height: 64px;
                     border-radius: 8px;
                 }
 
                 img {
+                    width: 100%;
                     z-index: 10;
                 }
 

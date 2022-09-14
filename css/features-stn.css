@@ -53,14 +53,7 @@ h2 {
   color: #E0E0E0;
 }
 .text-col button {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-  background: var(--link-color);
   padding: 1.85rem 3.2rem;
-  border: none;
-  border-radius: 32px;
 }
 
 .detailed {
@@ -78,6 +71,9 @@ h2 {
 
 .invest .other-col {
   width: 81%;
+}
+.invest .other-col:hover {
+  transform: scale(1.2);
 }
 .invest .other-col .btc-card {
   padding: 4rem 4rem 4.8rem;
@@ -147,7 +143,6 @@ h2 {
   background: #491F98;
   -webkit-backdrop-filter: blur(250px);
           backdrop-filter: blur(250px);
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 16px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -182,7 +177,6 @@ h2 {
 
 .grow .other-col {
   font-family: "Inter", sans-serif;
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 16px;
   display: grid;
   height: 100%;
@@ -200,6 +194,7 @@ h2 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding: 12px;
 }
 .grow .rate-card .headings {
   display: grid;
@@ -253,4 +248,45 @@ h2 {
 }
 .grow .rate-card .rates .red {
   color: #FF7676;
+}
+.grow .rate-card .rates:hover {
+  box-shadow: 0px 0px 5px 0px var(--primary-color);
+  border-radius: 16px;
+  background-color: #2B076E;
+  margin-left: -100px;
+  margin-right: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .features .container {
+    gap: 6rem;
+    padding: 5rem 0;
+  }
+  sup {
+    font-size: 10px;
+    line-height: 13px;
+    color: #CFCFCF;
+    opacity: 0.7;
+  }
+  h2 {
+    width: 100%;
+    font-size: 28px;
+  }
+  .rows {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .text-col {
+    padding: 0;
+    justify-self: center;
+    background-color: red;
+  }
+  .text-col h5 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+  }
+  .text-col p {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }

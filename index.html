@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/features-stn.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +28,10 @@
           <p>CRAPPO</p>
         </div>
 
+        <img src="images/menu.svg" alt="menu" class="menu-btn" />
+
         <nav>
+          <img src="images/exit.svg" alt="exit" class="exit-btn" />
           <ul class="pry-nav">
             <li><a href="#">Products</a></li>
             <li><a href="#">Features</a></li>
@@ -34,9 +39,9 @@
             <li><a href="#">Contact</a></li>
           </ul>
           <ul class="sec-nav">
-            <li><a href="#">Login</a></li>
+            <li class=""><a href="#">Login</a></li>
             <li class="demark"></li>
-            <li class="register"><a href="#">Register</a></li>
+            <li class="btn register"><a href="#">Register</a></li>
           </ul>
         </nav>
       </div>
@@ -103,7 +108,7 @@
               Experience the next generation cryptocurrency platform. No financial borders, extra
               fees, and fake reviews.
             </p>
-            <button>Learn More</button>
+            <button class="btn">Learn More</button>
           </div>
         </div>
       </div>
@@ -130,7 +135,7 @@
               <option value="TH/S">ETH</option>
               <option value="TH/S">LTH</option>
             </select>
-            <input type="submit" value="Calculate" />
+            <input class="btn" type="submit" value="Calculate" />
           </form>
         </div>
 
@@ -151,8 +156,8 @@
             <h5>Bitcoin <sup>BTC</sup></h5>
             <p>Digital currency in which a record of transactions is maintained.</p>
             <button>
-              <p>Start mining</p>
-              <span><img src="images/greater than.png" alt="" /></span>
+              <span>Start mining</span>
+              <img src="images/greater than.png" alt="" />
             </button>
           </div>
 
@@ -160,14 +165,20 @@
             <img src="images/Ethereum Icon.png" alt="ethereum" />
             <h5>Ethereum <sup>ETH</sup></h5>
             <p>Blockchain technology to create and run decentralized digital applications.</p>
-            <button><img src="images/greater than.png" alt="" /></button>
+            <button>
+              <span>Start mining</span>
+              <img src="images/greater than.png" alt="" />
+            </button>
           </div>
 
           <div class="card rest">
             <img src="images/Litecoin Icon.png" alt="litecoin" />
             <h5>Litecoin <sup>LTC</sup></h5>
             <p>Cryptocurrency that enables instant payments to anyone in the world.</p>
-            <button><img src="images/greater than.png" alt="" /></button>
+            <button>
+              <span>Start mining</span>
+              <img src="images/greater than.png" alt="" />
+            </button>
           </div>
         </div>
       </div>
@@ -184,7 +195,7 @@
               Get full statistic information about the behaviour of buyers and sellers will help you
               to make the decision.
             </p>
-            <button>Learn More</button>
+            <button class="btn">Learn More</button>
           </div>
 
           <div class="other-col">
@@ -223,7 +234,7 @@
               View all mining related information in realtime, at any point at any location and
               decide which polls you want to mine in.
             </p>
-            <button>Learn More</button>
+            <button class="btn">Learn More</button>
           </div>
 
           <img class="other-col" src="images/Statistic.png" alt="" />
@@ -236,7 +247,7 @@
               Use advanced analytical tools. Clear TradingView charts let you track current and
               historical profit investments.
             </p>
-            <button>Learn More</button>
+            <button class="btn">Learn More</button>
           </div>
 
           <div class="other-col">
@@ -335,7 +346,7 @@
         </div>
 
         <div class="payments">
-          <h1>We accept following payment systems</h1>
+          <h1>We accept the following payment systems</h1>
 
           <div class="mthds">
             <a href="#"><img src="images/VISA.png" alt="" class="visa" /></a>
@@ -358,6 +369,8 @@
       </div>
     </footer>
 
+    <div class="overlay-div"></div>
+    <div class="register-page"></div>
     <script src="crappo.js"></script>
   </body>
 </html>

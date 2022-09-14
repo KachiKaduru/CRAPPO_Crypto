@@ -1,0 +1,275 @@
+@media only screen and (max-width: 767px) {
+  body {
+    overflow: scroll;
+  }
+  .container {
+    width: 95%;
+  }
+  .container .btn {
+    font-size: 14px;
+    line-height: 100%;
+    border-radius: 32px;
+    padding: 0.8rem 1.2rem;
+  }
+  .menu-btn,
+.exit-btn {
+    display: block;
+    width: 25px;
+  }
+  header {
+    margin-top: 2rem;
+    margin-bottom: 1.63rem;
+  }
+  header .container .menu-btn {
+    width: 30px;
+    filter: invert(1);
+  }
+  header .container .menu-btn:hover {
+    scale: 0.9;
+  }
+  header .container nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: white;
+    gap: 3rem;
+  }
+  header .container nav * {
+    margin: 0;
+    color: black;
+  }
+  header .container nav .exit-btn {
+    position: absolute;
+    display: block;
+    width: 30px;
+    justify-self: flex-end;
+  }
+  header .container nav ul {
+    flex-direction: column;
+  }
+  main .container {
+    grid-template-columns: 1fr;
+  }
+  main .container .left-col {
+    justify-self: center;
+  }
+  main .container .left-col .promo {
+    margin: 12px auto;
+    padding: 0.4rem 0.55rem;
+    font-size: 1.2rem;
+  }
+  main .container .left-col .promo span {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+  }
+  main .container .left-col h1 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: left;
+  }
+  main .container .left-col p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 90%;
+  }
+  main .container .left-col button {
+    padding: 0.8rem;
+  }
+  main .container .left-col button p {
+    font-size: 14px;
+    padding-left: 0.5rem;
+  }
+  main .container .left-col button span img {
+    padding: 0.55rem 0.65rem;
+  }
+  .why-crappo .container .top-row {
+    grid-template-columns: 1fr;
+  }
+  .why-crappo .container .bottom-row {
+    grid-template-columns: 1fr;
+  }
+  .check .container {
+    padding: 5rem 0 11rem;
+  }
+  .check .container h4 {
+    font-size: 28px;
+    line-height: 150%;
+    padding: 0 10%;
+  }
+  .check .container p {
+    font-size: 14px;
+    line-height: 150%;
+    padding: 0 5%;
+  }
+  .calculate .container {
+    padding: 2.4rem 1.2rem;
+    width: 80%;
+    transform: translate(-50%, -40%);
+  }
+  .calculate .container .top-side form {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 0;
+    padding-bottom: 2.4rem;
+  }
+  .calculate .container .top-side form * {
+    font-size: 12px;
+  }
+  .calculate .container .top-side form input,
+.calculate .container .top-side form select {
+    justify-self: center;
+  }
+  .calculate .container .top-side form input[type=tel],
+.calculate .container select {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    outline: none;
+    background-color: unset;
+  }
+  .calculate .container .top-side form input[type=tel] option,
+.calculate .container select option {
+    font-size: 12px;
+  }
+  .calculate .container .down-side h5,
+.calculate .container .down-side p {
+    font-size: 12px;
+    padding: 0 0 0.8rem;
+    line-height: 150%;
+  }
+  .calculate .container .down-side h3 {
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    padding: 0 0 0.4rem;
+  }
+  .cryptocurrencies {
+    padding: 20rem 0 5rem;
+  }
+  .cryptocurrencies .container sup {
+    font-size: 11px;
+    line-height: 150%;
+    color: #BDBDBD;
+  }
+  .cryptocurrencies .container h2 {
+    font-size: 28px;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .cryptocurrencies .container .crypto-cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 0 10%;
+  }
+  .cryptocurrencies .container .crypto-cards .card {
+    max-width: 30rem;
+    max-height: 40rem;
+    padding: 2.4rem 1.2rem;
+  }
+  .cryptocurrencies .container .crypto-cards .card img {
+    width: 6rem;
+  }
+  .cryptocurrencies .container .crypto-cards .card h5 {
+    font-size: 28px;
+    margin: 5rem auto 3rem;
+  }
+  .cryptocurrencies .container .crypto-cards .card p {
+    font-size: 14px;
+  }
+  .cryptocurrencies .container .crypto-cards .card button img {
+    width: 0.9rem;
+    padding: 1.1rem 1.25rem;
+  }
+  .cryptocurrencies .container .card button:hover {
+    padding: 0.925rem 1.2rem;
+  }
+  .cryptocurrencies .container .card button:hover span {
+    font-size: 16px;
+  }
+  .cryptocurrencies .container .card button:hover img {
+    width: 5px;
+    padding: 0.55rem 0.65rem;
+  }
+  .subscribe {
+    padding: 4.4rem 0;
+  }
+  .subscribe .container {
+    grid-template-columns: 1fr;
+    padding: 1.2rem 2.4rem;
+  }
+  .subscribe .container .left-col h1 {
+    font-size: 28px;
+    line-height: 50%;
+  }
+  .subscribe .container .left-col p {
+    font-size: 14px;
+    width: unset;
+  }
+  .subscribe .container form {
+    padding-bottom: 2rem;
+    gap: 2rem;
+  }
+  .subscribe .container form input {
+    font-size: 16px;
+  }
+  .subscribe .container form input[type=submit] {
+    font-size: 14px;
+    padding: 0.7rem 1.6rem;
+  }
+  footer {
+    padding: 4rem 0 1rem;
+  }
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 0;
+    padding-bottom: 6rem;
+  }
+  footer .container .logo,
+footer .container .payments {
+    grid-column: 1/-1;
+  }
+  footer .container .foot {
+    padding-left: 1rem;
+  }
+  footer .container .foot h3 {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 1.2rem;
+  }
+  footer .container .foot li {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  footer .container .payments {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 0;
+  }
+  footer .container .payments h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+  footer .container .payments .mthds {
+    gap: 1rem;
+  }
+  footer .container .payments .mthds a {
+    width: 60px;
+  }
+  footer .container .payments .mthds img {
+    place-self: center;
+    width: 70%;
+  }
+  footer .container .payments .mthds .btc-img {
+    width: 14.25px;
+    height: 18.75px;
+    padding: 3.5px 5px;
+  }
+  footer .extra-links {
+    gap: 4.5rem;
+  }
+  footer .extra-links .socials {
+    gap: 2rem;
+  }
+}
